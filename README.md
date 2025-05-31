@@ -41,6 +41,10 @@ This algorithm proposes a **generic modular reduction method** for Generalized M
        - Exhaustive test with prime `3329` (Kyber algorithm parameter)  
        - Execution time: ~25 seconds (AMD 5600X CPU)  
 
+---  
+3. **`time_comparison.cpp`**  
+   - Time comparison of a single operation for outputting Generalized Mersenne, Montgomery, and Barrett algorithms
+   - 
 ---
 
 ## 作者 | Author  
