@@ -44,7 +44,7 @@ This algorithm proposes a **generic modular reduction method** for Generalized M
 ---  
 3. **`time_comparison.cpp`**  
    - Time comparison of a single operation for outputting Generalized Mersenne, Montgomery, and Barrett algorithms
-   - 
+   
 ---
 
 ## 作者 | Author  
