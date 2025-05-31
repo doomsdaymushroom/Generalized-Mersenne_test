@@ -31,13 +31,13 @@ This algorithm proposes a **generic modular reduction method** for Generalized M
        - 测试时长：约 25 秒（AMD 5600X CPU）  
 
 ---  
-1. **`Generalized Mersenne_Chinese`**  
-   - **Chinese-annotated code version**, including:  
-     - **C Model** (`Generalized Mersenne_UTF8.cpp`)  
+2. **`Generalized Mersenne_English`**  
+   - **English-annotated code version**, including:  
+     - **C Model** (`Generalized Mersenne.cpp`)  
        - Implements Generalized Mersenne, Montgomery, and Barrett algorithms  
        - Modify `TEST_Q`, `TEST_X`, `TEST_Y` in the main function to validate correctness under different moduli and inputs  
        - ⚠️ Note: Prevent 32-bit integer overflow  
-     - **Matlab Test Suite** (`kyber_test_UTF8.m`)  
+     - **Matlab Test Suite** (`kyber_test.m`)  
        - Exhaustive test with prime `3329` (Kyber algorithm parameter)  
        - Execution time: ~25 seconds (AMD 5600X CPU)  
 
