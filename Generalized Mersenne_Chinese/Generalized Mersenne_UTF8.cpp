@@ -90,8 +90,10 @@ uint32 GeneralizedMersenneReduce(uint32 a, uint32 b, uint32 Q) {
         if (Q > (1 << params.exponent_p)){
             Cres = (residual >> shift1) - (residual >> shift2);
         }else{
-            Cres = (residual >> shift1) + params.coefficient_k * (residual >> shift2); //硬件中由于采用截位方案，无需该步骤的判断，且该步骤已硬件友好为并行方案。
-        }
+            Cres = (residual >> shift1) + params.coefficient_k * (residual >> shift2); 
+        }/* 该部分硬件优化好化，在硬件中采用截位方式替换了该内容，无需使用乘法和分支条件
+          * （因为该步骤只需要得出一个逼近的结果）
+          */
         step1 += Cres;
 
         const uint64 step2 = ((step1 * (Q >> params.shift_q)) << params.shift_q);
