@@ -90,7 +90,7 @@ uint32 GeneralizedMersenneReduce(uint32 a, uint32 b, uint32 Q) {
         if (Q > (1 << params.exponent_p)){
             Cres = (residual >> shift1) - (residual >> shift2);
         }else{
-            Cres = (residual >> shift1) + params.coefficient_k * (residual >> shift2); // Hardware uses truncation scheme, no branch needed
+            Cres = (residual >> shift1) + params.coefficient_k * (residual >> shift2); 
         }
         step1 += Cres;
 
